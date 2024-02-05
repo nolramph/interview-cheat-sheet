@@ -1,7 +1,7 @@
 <template>
   <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+    <router-link to="/">Vue</router-link> |
+    <router-link to="/data-structure">Data Structure</router-link>
   </nav>
   <router-view />
 </template>
@@ -26,5 +26,11 @@ nav a {
 
 nav a.router-link-exact-active {
   color: #42b983;
+}
+
+body{
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
 }
 </style>

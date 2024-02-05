@@ -1,18 +1,24 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js + TypeScript App" />
+    <img alt="Vue logo" src="../assets/logo.png" height="150" width="150"/>
+    <PanelView />
   </div>
 </template>
 
 <script lang="ts">
 import { defineComponent } from "vue";
-import HelloWorld from "@/components/HelloWorld.vue"; // @ is an alias to /src
+import PanelView from "./PanelView.vue";
 
 export default defineComponent({
   name: "HomeView",
   components: {
-    HelloWorld,
+    PanelView
   },
 });
 </script>
+
+<style>
+.home img{
+  border-radius: 5px;
+}
+</style>
